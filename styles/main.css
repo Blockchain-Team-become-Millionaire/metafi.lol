@@ -1,0 +1,15 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html,
+body {
+  font-family: "Poppins", "Roboto", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow-y: overlay;
+}
+
+.controls {
+  display: none !important;
+}
