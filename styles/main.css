@@ -10,6 +10,25 @@ body {
   overflow-y: overlay;
 }
 
-.controls {
-  display: none !important;
+.enter-app {
+  position: relative;
+}
+
+.enter-app:before {
+  content: "";
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  position: absolute;
+  border-radius: 30px;
+  border: 2px solid #ffad02;
+  animation: ping 0.9s cubic-bezier(0.55, 0, 0.15, 0.55) infinite;
+}
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
 }
